@@ -1,0 +1,76 @@
+.result-main-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-main-container .result-main-body {
+  background-color: #d7dcea;
+  padding: 30px;
+  height: 100%;
+  width: 35%;
+}
+
+.result-main-container .result-main-body .bg-blue {
+  width: 100%;
+  height: 100%;
+  background-color: #0e47fe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-main-container .result-main-body .bg-blue .result-content {
+  width: 100%;
+}
+
+.result-main-container .result-main-body .bg-blue .result-content .congartulation-text {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #fff;
+}
+
+.result-main-container .result-main-body .bg-blue .result-content .congartulation-text span:nth-child(1) {
+  font-size: 30px;
+  font-weight: 600;
+  font-family: sans-serif, serif;
+  margin-bottom: 20px;
+}
+
+.result-main-container .result-main-body .bg-blue .result-content .congartulation-text span:not(:nth-child(1)) {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: sans-serif, serif;
+}
+
+.result-main-container .result-main-body .result-content .restart-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20%;
+}
+
+.result-main-container .result-main-body .result-content .restart-btn button {
+  padding: 10px 40px;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: sans-serif, serif;
+  border-radius: 10px;
+  background-color: #fff;
+  color: #0e47fe;
+  border: none;
+}
+
+.result-main-container .result-main-body .result-content .restart-btn button:hover {
+  background-color: #678afe;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media screen and (max-width: 426px) {
+  .result-main-container .result-main-body {
+    height: 100%;
+    width: 100%;
+  }
+}

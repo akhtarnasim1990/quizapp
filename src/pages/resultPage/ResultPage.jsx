@@ -4,7 +4,6 @@ import { useLocation, useNavigate } from "react-router-dom";
 const ResultPage = () => {
   const location = useLocation();
   const navigate = useNavigate();
-  console.log("Location", location);
 
   return (
     <div className="result-main-container">

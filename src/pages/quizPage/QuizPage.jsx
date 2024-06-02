@@ -18,14 +18,13 @@ const QuizPage = () => {
     let questionsData = localStorage.getItem("questionsData");
     const fetchData = async () => {
       try {
-        const response = await fetch("../../assets/questions.json");
+        const response = await fetch("/assets/questions.json");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
         const data = await response.json();
         const shuffleQA = shuffleHandler(data);
         localStorage.setItem("questionsData", JSON.stringify(shuffleQA));
-        console.log(shuffleQA);
         setJsonData(shuffleQA);
         setTotalQuestions(shuffleQA.questions.length);
       } catch (error) {
@@ -105,7 +104,6 @@ const QuizPage = () => {
 
   const shuffleHandler = (data) => {
     const shuffleData = { ...data, questions: [...shuffleArray(data.questions)] };
-    console.log(shuffleData);
     const shuffleQA = {
       ...shuffleData,
       questions: shuffleData.questions.map((question) => ({
@@ -117,7 +115,6 @@ const QuizPage = () => {
   };
 
   const shuffleArray = (array) => {
-    console.log("array", array);
     const shuffledArray = [...array];
     for (let i = shuffledArray.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -127,7 +124,6 @@ const QuizPage = () => {
   };
 
   if (!jsonData) {
-    console.log(jsonData);
     return <div>Loading...</div>;
   }
 

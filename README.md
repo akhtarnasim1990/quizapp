@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Quiz Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a responsive quiz web application built with React. It consists of three main pages: the Home page, Quiz page, and Result page. The application is designed to provide a smooth user experience with animations and randomization of questions and answers. The key libraries used in this project are `react-router-dom` for routing and `react-icons` for icons.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Three Pages**: Home, Quiz, and Result.
+- **Responsive Design**: Optimized for various screen sizes.
+- **Randomization**: Questions and answers are randomly populated on each attempt.
+- **Animations**: Added animations to the Quiz page for a better user experience.
+- **Reattempts**: On reattempting, the Quiz page reloads without refreshing the questions and answers.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Pages
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. Home Page
 
-### `npm test`
+- The landing page of the application.
+- Provides an introduction and a start button to begin the quiz.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 2. Quiz Page
 
-### `npm run build`
+- Displays the quiz questions and answer options.
+- Questions and answers are randomized for each attempt.
+- Includes animations for enhanced user interaction.
+- Tracks the user's selected answers and calculates the score.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 3. Result Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Displays the user's score and performance after completing the quiz.
+- Provides an option to reattempt the quiz.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Libraries Used
 
-### `npm run eject`
+- **react-router-dom**: For routing between different pages.
+- **react-icons**: For adding icons to enhance the UI.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Setup and Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the Repository**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```sh
+   git clone https://github.com/akhtarnasim1990/quizapp.git
+   cd quizapp
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+2. **Install Dependencies**
 
-## Learn More
+   ```sh
+   npm install
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **Run the Application**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```sh
+   npm start
+   ```
 
-### Code Splitting
+4. **Build the Application**
+   ```sh
+   npm run build
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Usage
 
-### Analyzing the Bundle Size
+- **Navigate to Home Page**: Start the quiz by clicking the start button.
+- **Quiz Page**: Answer the questions by selecting the options. The progress bar indicates your progress. Click "Next" or "Previous" to navigate through the questions.
+- **Result Page**: View your score and performance. Click the reattempt button to take the quiz again with new random questions and answers.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Additional Information
 
-### Making a Progressive Web App
+- **Responsive Design**: The app is designed to be fully responsive, providing a seamless experience on both desktop and mobile devices.
+- **Randomization Logic**: The randomization ensures a unique quiz experience on each attempt by shuffling questions and answer options.
+- **Animations**: Enhances the user experience on the Quiz page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Screenshots
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+_(Include screenshots of the Home page, Quiz page, and Result page)_

@@ -36,6 +36,11 @@ This is a responsive quiz web application built with React. It consists of three
 - **react-router-dom**: For routing between different pages.
 - **react-icons**: For adding icons to enhance the UI.
 
+## Note on Data Fetching
+
+- Although the current implementation uses static JSON data for questions and answers, the application is designed to follow a pattern suitable for fetching data from a real database.
+- This approach ensures that the application can be easily adapted to dynamic data sources, providing scalability and flexibility for future enhancements.
+
 ## Setup and Installation
 
 1. **Clone the Repository**

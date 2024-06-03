@@ -9,7 +9,7 @@ const QuizPage = () => {
   const [questionNumber, setQuestionNumber] = useState(1);
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [marks, setMarks] = useState(0);
-  const [slides, setSlides] = useState("slide-from-right");
+  const [slides, setSlides] = useState("slide-to-top");
   const [showRightSlideBtn, setShowRightSlideBtn] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();

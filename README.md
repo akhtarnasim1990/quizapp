@@ -78,7 +78,3 @@ This is a responsive quiz web application built with React. It consists of three
 - **Responsive Design**: The app is designed to be fully responsive, providing a seamless experience on both desktop and mobile devices.
 - **Randomization Logic**: The randomization ensures a unique quiz experience on each attempt by shuffling questions and answer options.
 - **Animations**: Enhances the user experience on the Quiz page.
-
-## Screenshots
-
-_(Include screenshots of the Home page, Quiz page, and Result page)_

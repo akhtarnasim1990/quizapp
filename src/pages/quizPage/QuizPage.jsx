@@ -18,7 +18,7 @@ const QuizPage = () => {
     let questionsData = localStorage.getItem("questionsData");
     const fetchData = async () => {
       try {
-        const response = await fetch("/assets/questions.json");
+        const response = await fetch("../../assets/questions.json");
         if (!response.ok) {
           throw new Error(`HTTP error! status: ${response.status}`);
         }
